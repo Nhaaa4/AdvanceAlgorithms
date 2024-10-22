@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 using namespace std;
-
+#define DECIMAL_DIGIT 2
 class BankAccount {
 // TODO
 private: 

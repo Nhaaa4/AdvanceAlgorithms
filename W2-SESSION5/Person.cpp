@@ -4,11 +4,10 @@ using namespace std;
 
 class Person {
 // Write you code here
-private:
+public:
     string lastName;
     string firstName;
     int securityNumber;
-public:
     Person() {
         this->lastName = "NULL";
         this->firstName = "NULL";

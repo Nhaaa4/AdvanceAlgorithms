@@ -80,6 +80,7 @@ int main() {
     Rectangle r2(p1, p2);
 
     cout<< r1.getWidth() << " " << r1.getHeight() << endl;
+    cout<< r2.perimeter() << endl;
     cout<< r1.area() << endl;
     cout<< r2.getWidth() << " " << r2.getHeight() << endl;
     cout<< r2.area() << endl;
