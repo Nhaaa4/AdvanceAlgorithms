@@ -8,11 +8,28 @@ void swap(int& a, int& b) {
 }
 bool isSorted(std::vector<int>& array) {
     // your code from exercise 1
+    for (int i = 1; i < array.size(); i++) {
+        if (array[i - 1] > array[i]) {
+            return false;
+        }
+    }
+    return true;
 }
 
 void bubbleSort(std::vector<int>& arr) {
     //your code here
     //validate the array is sorted or not
+    if (isSorted(arr)) {
+        std::cout << "Your array is sorted" << std::endl;
+    } else {
+        for (int i = 0; i < arr.size() - 1; i++) {
+            for (int j = 0; j < arr.size() - i - 2; j++) {
+                if (arr[j] > arr[j + 1]) {
+                    swap(arr[j], arr[j + 1]);
+                }
+            }
+        }
+    }
 }
 
 void printArray(const std::vector<int>& arr) {
